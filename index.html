@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Oil Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+}
+
+/* 170% zoom */
+.widget {
+    width: 100%;
+    transform: scale(1.7);
+    transform-origin: top left;
+}
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 8px 4px;
+    font-weight: 500;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- BLACKBULL WTI -->
+<div class="widget">
+<h2>BlackBull WTI</h2>
+<script src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+{
+    "symbol": "BLACKBULL:WTI",
+    "width": "100%",
+    "locale": "en",
+    "colorTheme": "dark",
+    "isTransparent": true
+}
+</script>
+</div>
+
+<!-- BLACKBULL BRENT -->
+<div class="widget">
+<h2>BlackBull BRENT</h2>
+<script src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+{
+    "symbol": "BLACKBULL:BRENT",
+    "width": "100%",
+    "locale": "en",
+    "colorTheme": "dark",
+    "isTransparent": true
+}
+</script>
+</div>
+
+</div>
+
+</body>
+</html>
